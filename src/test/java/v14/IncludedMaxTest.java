@@ -10,16 +10,19 @@ public class IncludedMaxTest {
     @Test
     public void givenMaxClosedwhenGreaterWithLessValueThenTrue(){
         assertTrue(new IncludedMax(4, false).greaterOrEquals(0.0));
+
     }
 
     @Test
     public void givenMaxClosedwhenGreaterWithGreaterValueThenFalse(){
         assertFalse(new IncludedMax(4, false).greaterOrEquals(5.0));
+
     }
 
     @Test
     public void givenMaxClosedwhenGreaterWithEqualValueThenFalse(){
         assertTrue(new IncludedMax(4, false).greaterOrEquals(4));
+
     }
 
 }
