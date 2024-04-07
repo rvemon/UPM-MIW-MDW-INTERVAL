@@ -13,20 +13,20 @@ public class IntervalTest {
 
   @Test
   public void givenIntervalOpenOpenwhenIncludeWithNotIncludedValueThenFalse(){
-    assertFalse(new Interval(true, -1.7, new Max(5555.0)).include(9000.0));
+    assertFalse(new Interval(-1.7, new Max(5555.0)).include(9000.0));
   }
   @Test
   public void givenIntervalOpenOpenwhenIncludeWithLimitValueThenFalse(){
-    assertFalse(new Interval(true, -1.7, new Max(5555.0)).include(5555.0));
+    assertFalse(new Interval(-1.7, new Max(5555.0)).include(5555.0));
   }
   @Test
   public void givenIntervalOpenClosewhenIncludeWithIncludedValueThenTrue(){
-    assertTrue(new Interval(true, -1.7, new ClosedMax(5555.0)).include(0.0));
+    assertTrue(new Interval( -1.7, new ClosedMax(5555.0)).include(0.0));
   }
 
   @Test
   public void givenIntervalOpenClosewhenIncludeWithNotIncludedValueThenFalse(){
-    assertFalse(new Interval(true, -1.7, new ClosedMax(5555.0)).include(9000.0));
+    assertFalse(new Interval( -1.7, new ClosedMax(5555.0)).include(9000.0));
 
   @Test
   public void givenIntervalOpenClosewhenIncludeWithLimitValueThenFalse(){

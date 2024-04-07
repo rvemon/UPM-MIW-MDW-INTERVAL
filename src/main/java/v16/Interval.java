@@ -4,7 +4,7 @@ public class Interval {
 
 	private Max max;
 
-	public Interval(Max max) {
+	public Interval(double min, Max max) {
 		this.max = max;
 
 	}
