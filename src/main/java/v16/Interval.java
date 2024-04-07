@@ -11,7 +11,7 @@ public class Interval {
 
 	public boolean include(double value) {
 
-		this.max.greaterOrEquals(value);
+		return this.max.greaterOrEquals(value);
 	}
 
 
